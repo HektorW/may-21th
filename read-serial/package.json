@@ -1,0 +1,17 @@
+{
+  "name": "read-serial",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "serialport": "^6.2.0"
+  }
+}
