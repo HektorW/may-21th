@@ -41,7 +41,7 @@ var port = new SerialPort(portName, { baudRate }, error => {
 
   console.log('Opened port')
 
-  printToFile(new Date().toISOString())
+  printToFile(`${new Date().toISOString()}\n`)
 })
 
 port.on('error', error => {
@@ -54,7 +54,7 @@ port.on('data', data => {
 })
 
 function printToFile(data) {
-  appendFile(outputDestination, `${data}\n`, error => {
+  appendFile(outputDestination, data, error => {
     if (error) {
       console.log('Failed to write data to file', error)
     }
